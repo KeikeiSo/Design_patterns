@@ -17,6 +17,14 @@ public class PlatDuJour {
         };
     }
     public PlatDuJour(){
+        initialize();
+    }
+
+    public void setPrototype(Repas pPrototype){
+        aPrototype = pPrototype;
+    }
+
+    public void initialize(){
         for (Jour day : Jour.values()){
             aPlatDuJour.put(day, aPrototype.clone());
         }
