@@ -9,7 +9,7 @@ The description of a design pattern includes a name, a description of the design
 - be careful not to break the encapsulation of classes simply to allow command objects to operate on target objects
 ### Law of Demeter
 i.e.provide intermediate service so that the internal objects encapsolated do not have to be accessed
-the code of method should only access:
+* the code of method should only access:
 - the instance variable of its implicit parameter
 - the argument passed to the method
 - any new object created within the method
