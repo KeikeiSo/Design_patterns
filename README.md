@@ -5,8 +5,17 @@ The description of a design pattern includes a name, a description of the design
 
 
 ## TemplateMethod
-- when you want a behavior(method) be fixed for all subclasses of an AbstractClass(construtor is protected)
+- when you want a behavior(method) be fixed for all subclasses of an AbstractClass(whose constructor must be protected)
 - note that the method should be final and should use abstract method(s) if it has custom step(s)
+### Liskov substitution principle (LSP)
+subclasses should not restrict what client of superclass can do with an instance
+#### methods of subclasses **cannot**:
+- have stricter preconditions
+- have less strict postconditions
+- take more specific types as parameter
+- make the method less accessible
+- throw more checked exceptions
+- have a less specific return type
 
 ## Command
 - When you want the functionality of undoing and redoing
