@@ -4,6 +4,10 @@ I practice and keep the design patterns I learnt here.
 The description of a design pattern includes a name, a description of the design problem or context it addresses, a solution template, and a discussion of the consequences of applying the pattern.
 
 
+## TemplateMethod
+- when you want a behavior(method) be fixed for all subclasses of an AbstractClass(construtor is protected)
+- note that the method should be final and should use abstract method(s) if it has custom step(s)
+
 ## Command
 - When you want the functionality of undoing and redoing
 - be careful not to break the encapsulation of classes simply to allow command objects to operate on target objects
