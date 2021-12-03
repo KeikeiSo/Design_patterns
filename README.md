@@ -4,6 +4,11 @@ I practice and keep the design patterns I learnt here.
 The description of a design pattern includes a name, a description of the design problem or context it addresses, a solution template, and a discussion of the consequences of applying the pattern.
 
 
+## Observer
+- when you want many object to observe some data
+- note that model will store a list of observers objects
+- and you should decide what parameter should be passed to the callback methods
+
 ## TemplateMethod
 - when you want a behavior(method) be fixed for all subclasses of an AbstractClass(whose constructor must be protected)
 - note that the method should be final and should use abstract method(s) if it has custom step(s)
