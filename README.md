@@ -55,9 +55,21 @@ i.e.provide intermediate service so that the internal objects encapsolated do no
 - no need to create a seperate class of null but rather just use the one created in the interface
 
 ## Strategy
-- when you want a method be able to apply to a group of object with similar functionality
+- when you want to support a interchangeable family of algorithm 
 ### Interface Segregation Principle(ISP)
 client code should not be forced to depend on interfaces it does not need
 
 ## Iterator
 - when you want to access an internal collection without violating encapsulation and information hiding properties
+
+
+# Antipatterns
+
+## PRIMITIVE OBSESSION
+- tendency to use primitive types to represent other abstraction
+
+## INAPPROPRIATE INTIMACY
+- interact too much with individual instances variables inside an object
+
+
+
