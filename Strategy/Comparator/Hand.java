@@ -9,7 +9,7 @@ public class Hand {
     private List<Card> aCards = new ArrayList<Card>();
 
     public Hand(Card... pCards){
-        if (pCards.length == 10){
+        if (pCards.length > 0){
             aCards.addAll(Arrays.asList(pCards));
         }
     }
@@ -29,6 +29,16 @@ public class Hand {
                 return counto1 - counto2;
             }
         };
+    }
+
+    public int getNumRank(Rank rank){
+        return (int) aCards.stream()
+        .filter(card -> card.getRank() == rank)
+        .count();
+    }
+
+    public int size(){
+        return aCards.size();
     }
 
     @Override
