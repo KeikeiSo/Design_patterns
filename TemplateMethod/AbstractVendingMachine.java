@@ -40,5 +40,13 @@ public abstract class AbstractVendingMachine {
         return aBalance;
     }
 
+    public boolean isEmpty(){
+        return aDrinks.isEmpty();
+    }
+
+    public int size(){
+        return aDrinks.size();
+    }
+
     protected abstract boolean isSufficient();
 }
